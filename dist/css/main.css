@@ -19,7 +19,6 @@ header {
   position: relative;
   display: flex;
   overflow: hidden;
-  transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
 }
 
 header nav {
@@ -79,13 +78,16 @@ header .slide_container {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: all 1s ease-in-out;
 }
 
 header .slide_container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+header .transitioned {
+  transition: all 1s ease-in-out;
 }
 
 header .arrow {

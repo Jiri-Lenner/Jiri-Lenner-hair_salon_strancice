@@ -19,19 +19,41 @@ let imgSetup = function () {
 //Call setup function
 imgSetup()
 
+//move by one
+let moveOne = function () {
+    for (let i = 0; i < img_container.length; i++) {
+        let percValue = parseInt(img_container[i].style.left)
+        img_container[i].style.left = (percValue - 1 * 100) + "%"
+    }
+    flow = 0
+}
+
 let movingImg = function (index) {
-    if (flow + index >= 0 && flow + index <= img_container.length - 1) {
+    if (flow + index + 1 > img_container.length - 1) {
+
+        //move one more
+        moveOne()
+
+        //img move to start
+        setTimeout(() => {
+            for (let i = 0; i < img_container.length; i++) {
+                img_container[i].classList.remove("transitioned")
+            }
+            for (let i = 0; i < img_container.length; i++) {
+                img_container[i].style.left = i * 100 + "%"
+            }
+        }, 1000)
+        for (let i = 0; i < img_container.length; i++) {
+            img_container[i].classList.add("transitioned")
+        }
+    }
+    else if (flow + index >= 0 && flow + index <= img_container.length - 1) {
         for (let i = 0; i < img_container.length; i++) {
             let percValue = parseInt(img_container[i].style.left)
             img_container[i].style.left = (percValue - index * 100) + "%"
         }
         flow += index
-    }
-    else if (flow + index > img_container.length - 1) {
-        flow = 0
-        for (let i = 0; i < img_container.length; i++) {
-            img_container[i].style.left = i * 100 + "%"
-        }
+        console.log(flow)
     }
     else {
         flow = img_container.length - 1
