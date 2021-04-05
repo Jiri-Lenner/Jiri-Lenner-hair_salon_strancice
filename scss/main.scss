@@ -6,6 +6,8 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 header{
     height: 100vh;
     background-position: center;
@@ -13,10 +15,12 @@ header{
     position: relative;
     display: flex;
     overflow: hidden;
+    z-index: 1;
+    //box-shadow: 0px 0px 10px 10px rgba();
 
     nav{   
         //nav 
-        position: absolute;
+        position: fixed;
         z-index: 1;
         height: 110px;
         width: 100%;
@@ -25,17 +29,17 @@ header{
         justify-content: space-between;
         left: 0;
         top: 0;
+        transition: height 500ms ease-out, background 1000ms ease-out;
         //logo 
         #nav_logo{
             width: 280px;
-            height: 60%;
-            margin-top: 40px;
+            height: 100%;
             margin-left: 120px;
 
             img{
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
 
         }
@@ -50,6 +54,7 @@ header{
             a{
                 width: 100px;
                 height: 40px;
+                margin-top: 5px;
 
                 color: white;
                 text-decoration: none;
@@ -61,15 +66,52 @@ header{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                position: relative;
             }
 
-            a:hover{
-                border-bottom: solid rgba(255, 255, 255,1) 3px;
-                margin-top: 3px;
+            a::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 0.175rem;
+                left: 0;
+                bottom: 0;
+                background-color: white;
+                transform: scale(0, 1);
+                transform-origin: 0% 100%;
+                transition: transform 300ms ease-out;
+            }
 
+            a:hover::after{
+                transform: scale(1, 1);
             }
         }
     }
+
+    .sticky{
+        background-color: rgb(14, 14, 14);
+        height: 60px;
+        #nav_logo{
+            width: 280px;
+            height: 80%;
+            margin-left: 120px;
+            margin-top: 20px;
+            transition: 200ms ease-out;
+            img{
+                width: 100%;
+                height: 90%;
+                object-fit: contain;
+            }
+        }
+
+        #nav_buttons_container{
+            a{
+                height: 54px;
+            }
+        }
+    }
+
     //img container
     .slide_container{
         position: absolute;
@@ -194,6 +236,30 @@ header{
 }
 
 main{
-    height: 1000px;
+    height: 2200px;
     background-color: orange;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    article:first-child{
+        background-color: rgb(21, 20, 20);
+        
+    }
+
+    article:nth-child(2){
+        background-color: $brown_color;
+        
+    }
+
+    article:last-child{
+        background-color: rgb(21, 20, 20);
+        
+    }
 }
+
+footer{
+    height: 250px;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+}
+

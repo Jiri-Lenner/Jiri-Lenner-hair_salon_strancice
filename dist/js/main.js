@@ -2,6 +2,20 @@
 const images = document.getElementsByClassName("slide_container");
 let currentImage = 0;
 
+//navbar
+window.addEventListener("scroll", function () {
+    let navbar = document.getElementById("navbar");
+    //navbar.classList.toggle("sticky", window.crollY > 0);
+    if (window.scrollY > 0) {
+        navbar.classList.add("sticky")
+        //console.log(window.scrollY)
+        //=> jak daleko je od vršku
+    }
+    else {
+        navbar.classList.remove("sticky")
+    }
+})
+
 //buttons
 const imageButtonLeft = document.getElementById("arrow_left");
 const imageButtonRight = document.getElementById("arrow_right");
@@ -51,8 +65,6 @@ let textAnimate = function () {
     }
 }
 
-
-
 //Call setup function
 imgSetup();
 
@@ -73,8 +85,6 @@ let movingImg = function (direction) {
     textAnimate()
     textAnimateReset()
 }
-
-
 
 imageButtonLeft.addEventListener("click", () => {
     movingImg(-1);
