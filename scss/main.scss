@@ -91,6 +91,7 @@ header{
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+            text-shadow: 0px 0px 10px rgba(0,0,0,1);
 
             font-size: 1rem;
             text-align: center;
@@ -144,6 +145,7 @@ header{
                 transform: translateX(-520px);
                 visibility:hidden;
                 opacity: 0;
+                text-shadow: none;
                 transition: 1000ms transform ease-in, 200ms background ease-in,1500ms visibility 700ms ease-in, 1500ms opacity 700ms;
             }
             
