@@ -1,0 +1,37 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?ea27644a339fbb6d0ddf0c5b87485304") format("truetype"),
+url("./flaticon.woff?ea27644a339fbb6d0ddf0c5b87485304") format("woff"),
+url("./flaticon.woff2?ea27644a339fbb6d0ddf0c5b87485304") format("woff2"),
+url("./flaticon.eot?ea27644a339fbb6d0ddf0c5b87485304#iefix") format("embedded-opentype"),
+url("./flaticon.svg?ea27644a339fbb6d0ddf0c5b87485304#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "cream": "\f101",
+    "manicure": "\f102",
+    "scissors": "\f103",
+);
+
+.flaticon-cream:before {
+    content: map-get($flaticon-map, "cream");
+}
+.flaticon-manicure:before {
+    content: map-get($flaticon-map, "manicure");
+}
+.flaticon-scissors:before {
+    content: map-get($flaticon-map, "scissors");
+}

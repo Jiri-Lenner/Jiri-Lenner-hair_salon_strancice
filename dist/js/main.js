@@ -92,3 +92,18 @@ imageButtonLeft.addEventListener("click", () => {
 imageButtonRight.addEventListener("click", () => {
     movingImg(1);
 })
+
+//Serices Buttons
+for (let element of document.getElementsByClassName("expandable")) {
+    element.addEventListener("mouseenter", e => {
+        e.target.style.height = "630px";
+        e.target.querySelector(".expTop").classList.toggle("expTopLight");
+    })
+    element.addEventListener("mouseleave", e => {
+        e.target.style.height = "280px";
+        e.target.querySelector(".expTop").classList.toggle("expTopLight");
+    })
+}
+
+
+

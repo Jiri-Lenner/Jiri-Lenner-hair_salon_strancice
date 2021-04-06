@@ -1,3 +1,5 @@
+@import "./variables";
+
 %arrows{
     top: 50%;
     margin-top: -40px;
@@ -5,4 +7,44 @@
     align-items: center;
     font-size: 3rem;
     justify-content: center;
+}
+
+%cards{
+    height: 280px;
+    width: 27%;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    position: relative;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
+    transition: height 350ms ease-in-out;
+
+    .expTop{
+        z-index: 1;
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        height: 280px;
+        width: 100%;
+        background-color: rgb(21, 20, 20);
+        color: rgb(205, 201, 201);
+        transition: background 500ms ease-out;
+    } 
+
+    .expBot{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 350px;
+        background-color: rgb(229, 227, 229);
+    }
+
+    .expTopLight{
+        background-color: $brown_color;
+        color: rgb(14, 14, 14);
+    }
 }
