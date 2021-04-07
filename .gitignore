@@ -1,30 +1,29 @@
+dist/icons/font/._flaticon.css
+dist/icons/font/._flaticon.eot
+dist/icons/font/._flaticon.html
+dist/icons/font/._flaticon.scss
+dist/icons/font/._flaticon.svg
+dist/icons/font/._flaticon.ttf
+dist/icons/font/._flaticon.woff
+dist/icons/font/._flaticon.woff2
 
-./dist/icons/font/._flaticon.css
-./dist/icons/font/._flaticon.eot
-./dist/icons/font/._flaticon.html
-./dist/icons/font/._flaticon.scss
-./dist/icons/font/._flaticon.svg
-./dist/icons/font/._flaticon.ttf
-./dist/icons/font/._flaticon.woff
-./dist/icons/font/._flaticon.woff2
+dist/icons/license/._license.html
 
-./dist/icons/license/._license.html
+dist/icons/._backup.txt
+dist/icons/._font
+dist/icons/._license
 
-./dist/icons/._backup.txt
-./dist/icons/._font
-./dist/icons/._license
+dist/img/Adobe Stock Standard License FHD/._red_woman.png
+dist/img/Adobe Stock Standard License FHD/._dark_man.png
+dist/img/Adobe Stock Standard License FHD/._blond_woman.png
+dist/img/Adobe Stock Standard License FHD/._blond_man.png
 
-./dist/img/Adobe Stock Standard License FHD/._red_woman.png
-./dist/img/Adobe Stock Standard License FHD/._dark_man.png
-./dist/img/Adobe Stock Standard License FHD/._blond_woman.png
-./dist/img/Adobe Stock Standard License FHD/._blond_man.png
+dist/img/._Adobe Stock Standard License FHD
+dist/img/._nav_logo.png
 
-./dist/img/._Adobe Stock Standard License FHD
-./dist/img/._nav_logo.png
-
-./dist/._css
-./dist/._icons
-./dist/._img
-./dist/._js
-./._dist
-./._scss
+dist/._css
+dist/._icons
+dist/._img
+dist/._js
+._dist
+._scss
