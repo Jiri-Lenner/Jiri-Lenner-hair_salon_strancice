@@ -36,15 +36,26 @@
     } 
 
     .expBot{
+        width: 100%;
         position: absolute;
         bottom: 0;
-        width: 100%;
-        height: 350px;
-        background-color: rgb(229, 227, 229);
+        height: 280px;
+        background-color: rgb(229, 227, 229); 
+        border-radius: 13px;
+        //come back
+        transition: border-radius 100ms ease-out 10ms, 800ms height ease-out 1ms;
     }
 
     .expTopLight{
         background-color: $brown_color;
         color: rgb(14, 14, 14);
+    }
+
+    .expBotLight{
+        height: 380px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        //come foward
+        transition: border-radius 100ms ease-out,100ms height ease-out;
     }
 }

@@ -33,16 +33,25 @@ main article:first-child #cardContainer #scissors .expTop, main article:first-ch
 }
 
 main article:first-child #cardContainer #scissors .expBot, main article:first-child #cardContainer #maskGel .expBot, main article:first-child #cardContainer #nails .expBot {
+  width: 100%;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 350px;
+  height: 280px;
   background-color: #e5e3e5;
+  border-radius: 13px;
+  transition: border-radius 100ms ease-out 10ms, 800ms height ease-out 1ms;
 }
 
 main article:first-child #cardContainer #scissors .expTopLight, main article:first-child #cardContainer #maskGel .expTopLight, main article:first-child #cardContainer #nails .expTopLight {
   background-color: #BE9F68;
   color: #0e0e0e;
+}
+
+main article:first-child #cardContainer #scissors .expBotLight, main article:first-child #cardContainer #maskGel .expBotLight, main article:first-child #cardContainer #nails .expBotLight {
+  height: 380px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  transition: border-radius 100ms ease-out,100ms height ease-out;
 }
 
 body {
@@ -285,7 +294,7 @@ main article:first-child {
 
 main article:first-child h1 {
   left: 50%;
-  top: 30px;
+  top: 20px;
   position: absolute;
   width: 200px;
   margin-left: -100px;
