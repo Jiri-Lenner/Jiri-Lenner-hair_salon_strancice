@@ -97,7 +97,7 @@ imageButtonRight.addEventListener("click", () => {
 
 for (let element of document.getElementsByClassName("expandable")) {
     element.addEventListener("mouseenter", e => {
-        e.target.style.height = "660px";
+        e.target.style.height = "560px";
         e.target.querySelector(".expTop").classList.toggle("expTopLight");
         e.target.querySelector(".expBot").classList.toggle("expBotLight");
     })

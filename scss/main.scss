@@ -95,7 +95,7 @@ header{
             width: 280px;
             height: 80%;
             margin-left: 120px;
-            margin-top: 20px;
+            margin-top: 15px;
             transition: 200ms ease-out;
             img{
                 width: 100%;
@@ -191,7 +191,7 @@ header{
             }
             
             a:hover{
-                background-color: rgb(203, 186, 157);
+                background-color: $ligter_brown;
             }
 
             .leftAppear{
@@ -249,10 +249,10 @@ main{
 
         position: relative;
 
-        h1{
+        .title{
             
             left: 50%;
-            top: 20px;
+            top: 40px;
             position: absolute;
             
             width: 200px;

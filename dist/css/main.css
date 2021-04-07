@@ -21,8 +21,9 @@ main article:first-child #cardContainer #scissors .expTop, main article:first-ch
   z-index: 1;
   font-size: 8rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   position: absolute;
   top: 0;
   height: 280px;
@@ -32,6 +33,11 @@ main article:first-child #cardContainer #scissors .expTop, main article:first-ch
   transition: background 500ms ease-out;
 }
 
+main article:first-child #cardContainer #scissors .expTop h1, main article:first-child #cardContainer #maskGel .expTop h1, main article:first-child #cardContainer #nails .expTop h1 {
+  font-size: 4rem;
+  font-family: 'Parisienne', cursive;
+}
+
 main article:first-child #cardContainer #scissors .expBot, main article:first-child #cardContainer #maskGel .expBot, main article:first-child #cardContainer #nails .expBot {
   width: 100%;
   position: absolute;
@@ -39,7 +45,41 @@ main article:first-child #cardContainer #scissors .expBot, main article:first-ch
   height: 280px;
   background-color: #e5e3e5;
   border-radius: 13px;
-  transition: border-radius 100ms ease-out 10ms, 800ms height ease-out 1ms;
+  transition: border-radius 100ms ease-out 10ms;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+main article:first-child #cardContainer #scissors .expBot p, main article:first-child #cardContainer #maskGel .expBot p, main article:first-child #cardContainer #nails .expBot p {
+  font-size: 1.5rem;
+  line-height: 30px;
+  text-align: left;
+}
+
+main article:first-child #cardContainer #scissors .expBot a, main article:first-child #cardContainer #maskGel .expBot a, main article:first-child #cardContainer #nails .expBot a {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 2px;
+  color: #151414;
+  background-color: #BE9F68;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  width: 170px;
+  height: 50px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  transition: background 200ms ease-out , box-shadow 200ms ease-out;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+main article:first-child #cardContainer #scissors .expBot a:hover, main article:first-child #cardContainer #maskGel .expBot a:hover, main article:first-child #cardContainer #nails .expBot a:hover {
+  background-color: #cbba9d;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 main article:first-child #cardContainer #scissors .expTopLight, main article:first-child #cardContainer #maskGel .expTopLight, main article:first-child #cardContainer #nails .expTopLight {
@@ -48,10 +88,8 @@ main article:first-child #cardContainer #scissors .expTopLight, main article:fir
 }
 
 main article:first-child #cardContainer #scissors .expBotLight, main article:first-child #cardContainer #maskGel .expBotLight, main article:first-child #cardContainer #nails .expBotLight {
-  height: 380px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  transition: border-radius 100ms ease-out,100ms height ease-out;
 }
 
 body {
@@ -146,7 +184,7 @@ header .sticky #nav_logo {
   width: 280px;
   height: 80%;
   margin-left: 120px;
-  margin-top: 20px;
+  margin-top: 15px;
   transition: 200ms ease-out;
 }
 
@@ -292,9 +330,9 @@ main article:first-child {
   position: relative;
 }
 
-main article:first-child h1 {
+main article:first-child .title {
   left: 50%;
-  top: 20px;
+  top: 40px;
   position: absolute;
   width: 200px;
   margin-left: -100px;
