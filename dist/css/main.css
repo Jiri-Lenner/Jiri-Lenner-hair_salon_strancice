@@ -424,6 +424,7 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
 }
 
 main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -434,8 +435,41 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
   transition: border 300ms ease-out;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border div {
+  z-index: 1;
+  background-color: white;
   position: absolute;
+  transition: top 300ms ease-out, bottom 300ms ease-out, left 300ms ease-out, right 300ms ease-out;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border #leftLine {
+  height: 100%;
+  left: -2px;
+  width: 2px;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border #rightLine {
+  height: 100%;
+  right: -2px;
+  width: 2px;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border #topLine {
+  top: -2px;
+  height: 2px;
+  width: 100%;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border #botLine {
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content {
+  overflow: hidden;
+  position: absolute;
+  text-decoration: none;
   top: 0;
   left: 0;
   width: 100%;
@@ -480,6 +514,22 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
 
 main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border {
   border: solid 20px rgba(21, 20, 20, 0.4);
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border #leftLine {
+  left: 40px;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border #rightLine {
+  right: 40px;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border #topLine {
+  top: 40px;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border #botLine {
+  bottom: 40px;
 }
 
 main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #content {
