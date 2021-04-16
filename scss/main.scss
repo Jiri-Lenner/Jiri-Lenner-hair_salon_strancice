@@ -1,9 +1,14 @@
 @import "extensions";
 @import "_variables";
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 header{
@@ -15,7 +20,7 @@ header{
     overflow: hidden;
     z-index: 3;
     box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
-
+    
     nav{   
         //nav 
         position: fixed;
@@ -85,6 +90,14 @@ header{
                 transform: scale(1, 1);
             }
         }
+        
+    }
+
+    #anchorPoint{
+        height: 60px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     .sticky{
@@ -238,7 +251,7 @@ main{
     article:first-child{
 
         width: 100%;
-        height: 900px;
+        height: 1000px;
         z-index: 2;
 
         box-shadow: 0px 0px 20px 5px rgba(0,0,0,1);
@@ -253,7 +266,7 @@ main{
         .title{
             
             left: 50%;
-            top: 40px;
+            top: 70px;
             position: absolute;
             
             width: 200px;

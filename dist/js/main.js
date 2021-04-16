@@ -20,13 +20,11 @@ window.addEventListener("scroll", function () {
     if (window.scrollY > window.innerHeight + 400) {
         openHour.classList.remove("movedContainer")
         openHour.classList.add("movigLines")
-        console.log(openHour)
     }
 
     if (window.scrollY < window.innerHeight + 400) {
         openHour.classList.add("movedContainer")
         openHour.classList.remove("movigLines")
-        console.log(openHour)
     }
 
 })

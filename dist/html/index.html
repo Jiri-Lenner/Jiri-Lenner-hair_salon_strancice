@@ -19,22 +19,25 @@
 </head>
 
 <body>
-    <header>
+    <header id="frontPage">
         <!--Nav => absolutly positioned-->
         <nav id="navbar">
-            <a href="" id="nav_logo">
+            <a href="#frontPage" id="nav_logo">
                 <img src="../img/nav_logo.png" alt="Logo">
             </a>
 
             <div id="nav_buttons_container">
-                <a class="navButton navUnderlineLeave" href="">Služby</a>
+                <a class="navButton navUnderlineLeave" href="#anchorPoint">Služby</a>
                 <a class="navButton navUnderlineLeave" href="">Náš Team</a>
                 <a class="navButton navUnderlineLeave" href="">Galerie</a>
                 <a class="navButton navUnderlineLeave" href="">Kontakty</a>
             </div>
         </nav>
+        <!--anchor point for header-->
+        <div id="anchorPoint">
+
+        </div>
         <!--Slide containers with content-->
-        //1
         <div class="slide_container transitioned">
             <img src="../img/Adobe_Stock_Standard_License_FHD/blond_woman.png" alt="Adobe stock standard licence">
             <div class="slide_text">
@@ -97,7 +100,7 @@
     </header>
 
     <main>
-        <article>
+        <article id="services">
 
             <h1 class="title">
                 Služby
@@ -135,7 +138,7 @@
                 <div class="expandable" id="nails">
                     <div class="expTop ">
                         <i class="flaticon-pedicure"></i>
-                        <h1>Pedikůra</h1>
+                        <h1>Pedikúra</h1>
                     </div>
                     <div class="expBot">
                         <p>
