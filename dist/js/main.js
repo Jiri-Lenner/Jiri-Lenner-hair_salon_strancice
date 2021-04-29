@@ -146,19 +146,67 @@ imageButtonRight.addEventListener("click", () => {
     movingImg(1);
 })
 
-//Serices Buttons
-
-for (let element of document.getElementsByClassName("expandable")) {
-    element.addEventListener("mouseenter", e => {
-        e.target.style.height = "560px";
-        e.target.querySelector(".expTop").classList.toggle("expTopLight");
-        e.target.querySelector(".expBot").classList.toggle("expBotLight");
-    })
-    element.addEventListener("mouseleave", e => {
-        e.target.style.height = "280px";
-        e.target.querySelector(".expTop").classList.toggle("expTopLight");
-        e.target.querySelector(".expBot").classList.toggle("expBotLight");
-    })
+//Services Buttons on lunch
+if(window.innerWidth <= 800){
+    for (let element of document.getElementsByClassName("expandable")) {
+        element.style.height = "560px";
+        element.querySelector(".expTop").classList.add("expTopLight");
+        element.querySelector(".expBot").classList.add("expBotLight");
+    }
 }
+else{
+    for (let element of document.getElementsByClassName("expandable")) {
+        element.addEventListener("mouseenter", e => {
+            if(window.innerWidth > 800){
+                e.target.style.height = "560px";
+                e.target.querySelector(".expTop").classList.add("expTopLight");
+                e.target.querySelector(".expBot").classList.add("expBotLight");
+            }
+        })
+        element.addEventListener("mouseleave", e => {
+            if(window.innerWidth > 800){
+                e.target.style.height = "280px";
+                e.target.querySelector(".expTop").classList.remove("expTopLight");
+                e.target.querySelector(".expBot").classList.remove("expBotLight");
+            }
+        })
+    }
+}
+
+window.addEventListener("resize", ()=>{
+    if(window.innerWidth > 800){
+        //get it back to original shape
+        for (let element of document.getElementsByClassName("expandable")) {
+            
+            element.style.height = "280px";
+            element.querySelector(".expTop").classList.remove("expTopLight");
+            element.querySelector(".expBot").classList.remove("expBotLight");
+
+            //add event listener
+            element.addEventListener("mouseenter", e => {
+                if(window.innerWidth > 800){
+                    e.target.style.height = "560px";
+                    e.target.querySelector(".expTop").classList.add("expTopLight");
+                    e.target.querySelector(".expBot").classList.add("expBotLight");
+                }
+            })
+            element.addEventListener("mouseleave", e => { 
+                if(window.innerWidth > 800){
+                    e.target.style.height = "280px";
+                    e.target.querySelector(".expTop").classList.remove("expTopLight");
+                    e.target.querySelector(".expBot").classList.remove("expBotLight");
+                }
+            })
+        }
+    }else if(window.innerWidth <= 800){
+        for (let element of document.getElementsByClassName("expandable")) {
+            element.style.height = "560px";
+            element.querySelector(".expTop").classList.add("expTopLight");
+            element.querySelector(".expBot").classList.add("expBotLight");
+        }
+    }
+})
+
+
 
 

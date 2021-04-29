@@ -817,9 +817,22 @@ main article:first-child #cardContainer .expandable:hover {
   height: 560px;
 }
 
-@media screen and (max-width: 1450px) and (min-width: 0px) {
+@media screen and (max-width: 1450px) and (min-width: 801px) {
   main article:first-child {
     height: 1600px;
+  }
+  main article:first-child #cardContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 0px) {
+  main article:first-child {
+    height: 2500px;
   }
   main article:first-child #cardContainer {
     -webkit-box-orient: vertical;
