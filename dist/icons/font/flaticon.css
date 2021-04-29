@@ -1,35 +1,41 @@
+@charset "UTF-8";
 @font-face {
-    font-family: "flaticon";
-    src: url("./flaticon.ttf?67bc1c06eb30754e71edd9a2714e8459") format("truetype"),
-url("./flaticon.woff?67bc1c06eb30754e71edd9a2714e8459") format("woff"),
-url("./flaticon.woff2?67bc1c06eb30754e71edd9a2714e8459") format("woff2"),
-url("./flaticon.eot?67bc1c06eb30754e71edd9a2714e8459#iefix") format("embedded-opentype"),
-url("./flaticon.svg?67bc1c06eb30754e71edd9a2714e8459#flaticon") format("svg");
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?67bc1c06eb30754e71edd9a2714e8459") format("truetype"), url("./flaticon.woff?67bc1c06eb30754e71edd9a2714e8459") format("woff"), url("./flaticon.woff2?67bc1c06eb30754e71edd9a2714e8459") format("woff2"), url("./flaticon.eot?67bc1c06eb30754e71edd9a2714e8459#iefix") format("embedded-opentype"), url("./flaticon.svg?67bc1c06eb30754e71edd9a2714e8459#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flaticon-cream:before {
-    content: "\f101";
+  content: "";
 }
+
+.flaticon-map:before {
+  content: "";
+}
+
 .flaticon-maps-and-flags:before {
-    content: "\f103";
+  content: "";
 }
+
 .flaticon-pedicure:before {
-    content: "\f104";
+  content: "";
 }
+
 .flaticon-salon:before {
-    content: "\f105";
+  content: "";
 }
+
 .flaticon-scissors:before {
-    content: "\f106";
+  content: "";
 }
+/*# sourceMappingURL=flaticon.css.map */

@@ -21,13 +21,54 @@ window.addEventListener("scroll", function () {
         openHour.classList.remove("movedContainer")
         openHour.classList.add("movigLines")
     }
-
-    if (window.scrollY < window.innerHeight + 400) {
-        openHour.classList.add("movedContainer")
-        openHour.classList.remove("movigLines")
-    }
-
 })
+
+//nav Slide in
+let hiddenNav = document.getElementById("hiddenNav");
+
+let animateHidden = function(){
+    let animated = hiddenNav.animate([
+        {
+            left: "0%"
+        }, 
+        {
+            
+            left: "100%"
+        }
+    ],{
+        duration: 500,
+        easing: "ease-in",
+    });
+    hiddenNav.style.left = "100%";
+} 
+
+hiddenNav.querySelector("#navCross").addEventListener("click", ()=>{
+    animateHidden();
+})
+
+document.getElementById("showNav").addEventListener("click", ()=>{
+    let animated = hiddenNav.animate([
+        {
+            left: "100%"
+        }, 
+        {
+            
+            left: "0%"
+        }
+    ],{
+        duration: 500,
+        easing: "ease-in",
+        
+    });
+    hiddenNav.style.left = "0%";
+})
+
+for (element of document.getElementsByClassName("hiddenButtons"))
+{
+    element.addEventListener("click", ()=>{
+        animateHidden();
+    })
+}
 
 //buttons
 const imageButtonLeft = document.getElementById("arrow_left");
@@ -119,3 +160,5 @@ for (let element of document.getElementsByClassName("expandable")) {
         e.target.querySelector(".expBot").classList.toggle("expBotLight");
     })
 }
+
+
