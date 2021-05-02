@@ -13,6 +13,13 @@ header #arrow_left, header #arrow_right {
           justify-content: center;
 }
 
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  header #arrow_left, header #arrow_right {
+    top: 90%;
+    margin-top: 0px;
+  }
+}
+
 #anchorPointTop, #anchorPointBottom {
   height: 60px;
   position: absolute;
@@ -66,6 +73,42 @@ main article:first-child #cardContainer #scissors .expTop h1, main article:first
   font-family: 'Parisienne', cursive;
 }
 
+@media screen and (max-width: 480px) and (min-width: 391px) {
+  main article:first-child #cardContainer #scissors .expTop, main article:first-child #cardContainer #maskGel .expTop, main article:first-child #cardContainer #nails .expTop {
+    height: 260px;
+  }
+  main article:first-child #cardContainer #scissors .expTop h1, main article:first-child #cardContainer #maskGel .expTop h1, main article:first-child #cardContainer #nails .expTop h1 {
+    font-size: 3.5rem;
+  }
+  main article:first-child #cardContainer #scissors .expTop i, main article:first-child #cardContainer #maskGel .expTop i, main article:first-child #cardContainer #nails .expTop i {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 371px) {
+  main article:first-child #cardContainer #scissors .expTop, main article:first-child #cardContainer #maskGel .expTop, main article:first-child #cardContainer #nails .expTop {
+    height: 240px;
+  }
+  main article:first-child #cardContainer #scissors .expTop h1, main article:first-child #cardContainer #maskGel .expTop h1, main article:first-child #cardContainer #nails .expTop h1 {
+    font-size: 3.2rem;
+  }
+  main article:first-child #cardContainer #scissors .expTop i, main article:first-child #cardContainer #maskGel .expTop i, main article:first-child #cardContainer #nails .expTop i {
+    font-size: 5.7rem;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+  main article:first-child #cardContainer #scissors .expTop, main article:first-child #cardContainer #maskGel .expTop, main article:first-child #cardContainer #nails .expTop {
+    height: 220px;
+  }
+  main article:first-child #cardContainer #scissors .expTop h1, main article:first-child #cardContainer #maskGel .expTop h1, main article:first-child #cardContainer #nails .expTop h1 {
+    font-size: 3rem;
+  }
+  main article:first-child #cardContainer #scissors .expTop i, main article:first-child #cardContainer #maskGel .expTop i, main article:first-child #cardContainer #nails .expTop i {
+    font-size: 5.5rem;
+  }
+}
+
 main article:first-child #cardContainer #scissors .expBot, main article:first-child #cardContainer #maskGel .expBot, main article:first-child #cardContainer #nails .expBot {
   width: 100%;
   position: absolute;
@@ -80,10 +123,52 @@ main article:first-child #cardContainer #scissors .expBot, main article:first-ch
   padding: 30px;
 }
 
+@media screen and (max-width: 480px) and (min-width: 391px) {
+  main article:first-child #cardContainer #scissors .expBot, main article:first-child #cardContainer #maskGel .expBot, main article:first-child #cardContainer #nails .expBot {
+    height: 260px;
+    padding: 27px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 371px) {
+  main article:first-child #cardContainer #scissors .expBot, main article:first-child #cardContainer #maskGel .expBot, main article:first-child #cardContainer #nails .expBot {
+    height: 240px;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+  main article:first-child #cardContainer #scissors .expBot, main article:first-child #cardContainer #maskGel .expBot, main article:first-child #cardContainer #nails .expBot {
+    height: 220px;
+    padding: 20px;
+  }
+}
+
 main article:first-child #cardContainer #scissors .expBot p, main article:first-child #cardContainer #maskGel .expBot p, main article:first-child #cardContainer #nails .expBot p {
   font-size: 1.5rem;
   line-height: 30px;
   text-align: left;
+}
+
+@media screen and (max-width: 480px) and (min-width: 391px) {
+  main article:first-child #cardContainer #scissors .expBot p, main article:first-child #cardContainer #maskGel .expBot p, main article:first-child #cardContainer #nails .expBot p {
+    font-size: 1.4rem;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 371px) {
+  main article:first-child #cardContainer #scissors .expBot p, main article:first-child #cardContainer #maskGel .expBot p, main article:first-child #cardContainer #nails .expBot p {
+    font-size: 1.3rem;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+  main article:first-child #cardContainer #scissors .expBot p, main article:first-child #cardContainer #maskGel .expBot p, main article:first-child #cardContainer #nails .expBot p {
+    font-size: 1.2rem;
+    line-height: 22px;
+  }
 }
 
 main article:first-child #cardContainer #scissors .expBot a, main article:first-child #cardContainer #maskGel .expBot a, main article:first-child #cardContainer #nails .expBot a {
@@ -117,6 +202,27 @@ main article:first-child #cardContainer #scissors .expBot a, main article:first-
           box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 480px) and (min-width: 391px) {
+  main article:first-child #cardContainer #scissors .expBot a, main article:first-child #cardContainer #maskGel .expBot a, main article:first-child #cardContainer #nails .expBot a {
+    left: 25px;
+    bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 371px) {
+  main article:first-child #cardContainer #scissors .expBot a, main article:first-child #cardContainer #maskGel .expBot a, main article:first-child #cardContainer #nails .expBot a {
+    left: 20px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+  main article:first-child #cardContainer #scissors .expBot a, main article:first-child #cardContainer #maskGel .expBot a, main article:first-child #cardContainer #nails .expBot a {
+    left: 20px;
+    bottom: 20px;
+  }
+}
+
 main article:first-child #cardContainer #scissors .expBot a:hover, main article:first-child #cardContainer #maskGel .expBot a:hover, main article:first-child #cardContainer #nails .expBot a:hover {
   background-color: #cbba9d;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
@@ -140,13 +246,13 @@ html {
 body {
   background-color: black;
   font-family: 'Roboto', sans-serif;
-  min-width: 550px;
+  min-width: 320px;
   min-height: 3000px;
 }
 
 header {
   height: 100vh;
-  min-height: 600px;
+  min-height: 560px;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -179,15 +285,30 @@ header nav {
   transition: height 500ms ease-out, background 1000ms ease-out;
 }
 
+@media screen and (max-width: 550px) and (min-width: 0px) {
+  header nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 header nav #nav_logo {
   width: 280px;
   height: 100%;
   margin-left: 120px;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 0px) {
+@media screen and (max-width: 1200px) and (min-width: 551px) {
   header nav #nav_logo {
     margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 0px) {
+  header nav #nav_logo {
+    margin-left: 20px;
+    width: 320px;
   }
 }
 
@@ -214,9 +335,23 @@ header nav #nav_buttons_container {
   margin-right: 120px;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 0px) {
+@media screen and (max-width: 1200px) and (min-width: 550px) {
   header nav #nav_buttons_container {
     margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 401px) {
+  header nav #nav_buttons_container {
+    margin-right: 50px;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 0px) {
+  header nav #nav_buttons_container {
+    margin-right: 20px;
+    width: 300px;
   }
 }
 
@@ -291,6 +426,14 @@ header nav #nav_buttons_container #showNav {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+@media screen and (max-width: 400px) and (min-width: 0px) {
+  header nav #nav_buttons_container #showNav {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 header nav #nav_buttons_container #showNav::after {
@@ -445,9 +588,21 @@ header .sticky #nav_logo {
   transition: 200ms ease-out;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 0px) {
+@media screen and (max-width: 1200px) and (min-width: 550px) {
   header .sticky #nav_logo {
     margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 401px) {
+  header .sticky #nav_logo {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 0px) {
+  header .sticky #nav_logo {
+    margin-left: 20px;
   }
 }
 
@@ -677,7 +832,7 @@ header .slide_container .slide_text .leftAppear {
   }
 }
 
-@media screen and (max-width: 500px) and (min-width: 400px) {
+@media screen and (max-width: 500px) and (min-width: 320px) {
   header .slide_container .slide_text {
     height: 300px;
     width: 300px;
@@ -736,9 +891,15 @@ header #arrow_left {
   }
 }
 
-@media screen and (max-width: 801px) and (min-width: 0px) {
+@media screen and (max-width: 801px) and (min-width: 501px) {
   header #arrow_left {
     left: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  header #arrow_left {
+    left: 100px;
   }
 }
 
@@ -755,9 +916,15 @@ header #arrow_right {
   }
 }
 
-@media screen and (max-width: 801px) and (min-width: 0px) {
+@media screen and (max-width: 801px) and (min-width: 501px) {
   header #arrow_right {
     right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  header #arrow_right {
+    right: 100px;
   }
 }
 
@@ -811,6 +978,60 @@ main article:first-child #cardContainer {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) and (min-width: 391px) {
+  main article:first-child #cardContainer #scissors {
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 371px) {
+  main article:first-child #cardContainer #scissors {
+    min-width: 310px;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+  main article:first-child #cardContainer #scissors {
+    min-width: 270px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 391px) {
+  main article:first-child #cardContainer #maskGel {
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 371px) {
+  main article:first-child #cardContainer #maskGel {
+    min-width: 310px;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+  main article:first-child #cardContainer #maskGel {
+    min-width: 270px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 391px) {
+  main article:first-child #cardContainer #nails {
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 371px) {
+  main article:first-child #cardContainer #nails {
+    min-width: 310px;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+  main article:first-child #cardContainer #nails {
+    min-width: 270px;
+  }
+}
+
 main article:first-child #cardContainer .expandable {
   position: relative;
 }
@@ -835,9 +1056,41 @@ main article:first-child #cardContainer .expandable:hover {
   }
 }
 
-@media screen and (max-width: 800px) and (min-width: 0px) {
+@media screen and (max-width: 800px) and (min-width: 481px) {
   main article:first-child {
     height: 2500px;
+  }
+  main article:first-child #cardContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 371px) {
+  main article:first-child {
+    height: 2250px;
+  }
+  main article:first-child #cardContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 371px) and (min-width: 0px) {
+  main article:first-child {
+    height: 1800px;
   }
   main article:first-child #cardContainer {
     -webkit-box-pack: space-evenly;
@@ -1649,6 +1902,13 @@ footer {
   padding: 70px 100px;
   font-size: 1.2rem;
   color: whitesmoke;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1450px) and (min-width: 0px) {
+  footer {
+    height: 700px;
+  }
 }
 
 footer #footerContainer {
@@ -1830,35 +2090,5 @@ footer #footerContainer #products .imgSize img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-#creator {
-  width: 100%;
-  height: 40px;
-  background-color: #151414;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #6D6D6D;
-  font-size: 1rem;
-}
-
-#creator #icons {
-  margin-left: 50px;
-}
-
-#creator a {
-  text-decoration: none;
-  color: #6D6D6D;
-}
-
-#creator p {
-  margin-right: 50px;
 }
 /*# sourceMappingURL=main.css.map */

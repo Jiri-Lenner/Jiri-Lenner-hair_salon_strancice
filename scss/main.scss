@@ -8,9 +8,8 @@ html{
 body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
-    min-width: 550px;   
+    min-width: 320px;   
     min-height: 3000px;
-    
 }
 
 #anchorPointTop{
@@ -24,7 +23,7 @@ body{
 
 header{
     height: 100vh;
-    min-height: 600px;
+    min-height: 560px;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -45,14 +44,24 @@ header{
         left: 0;
         top: 0;
         transition: height 500ms ease-out, background 1000ms ease-out;
+
+        @media screen and (max-width: 550px) and (min-width: 0px) {
+            justify-content: center;
+        }
+
         //logo 
         #nav_logo{
             width: 280px;
             height: 100%;
             margin-left: 120px;
 
-            @media screen and (max-width: 1200px) and (min-width: 0px) {
+            @media screen and (max-width: 1200px) and (min-width: 551px) {
                 margin-left: 50px;   
+            }
+
+            @media screen and (max-width: 550px) and (min-width: 0px) {
+                margin-left: 20px;
+                width: 320px;   
             }
 
             img{
@@ -71,8 +80,18 @@ header{
             align-items: center;
             gap: 50px;
             margin-right: 120px;
-            @media screen and (max-width: 1200px) and (min-width: 0px) {
+            @media screen and (max-width: 1200px) and (min-width: 550px) {
                 margin-right: 50px;   
+            }
+
+            @media screen and (max-width: 550px) and (min-width: 401px) {
+                margin-right: 50px;   
+                width: 450px;
+            }
+
+            @media screen and (max-width: 400px) and (min-width: 0px) {
+                margin-right: 20px; 
+                width: 300px;
             }
 
             a{
@@ -129,6 +148,10 @@ header{
 
                 position: relative;
                 
+                @media screen and (max-width: 400px) and (min-width: 0px) {
+                    align-items: flex-end;
+                }
+
                 &::after{
                     content: '';
                     position: absolute;
@@ -255,8 +278,16 @@ header{
             margin-top: 15px;
             transition: 200ms ease-out;
 
-            @media screen and (max-width: 1200px) and (min-width: 0px) {
+            @media screen and (max-width: 1200px) and (min-width: 550px) {
                 margin-left: 50px;   
+            }
+
+            @media screen and (max-width: 550px) and (min-width: 401px) {
+                margin-left: 50px;   
+            }
+
+            @media screen and (max-width: 400px) and (min-width: 0px) {
+                margin-left: 20px; 
             }
 
             img{
@@ -268,7 +299,7 @@ header{
 
         #nav_buttons_container{
             a{
-                height: 100%;
+                height: 100%; 
             }
         }
     }
@@ -475,7 +506,7 @@ header{
             }            
         }
 
-        @media screen and (max-width: 500px) and (min-width: 400px) {
+        @media screen and (max-width: 500px) and (min-width: 320px) {
             .slide_text{
                 height: 300px;
                 width: 300px;
@@ -498,10 +529,8 @@ header{
                     width: 50%;
                     height: 15%;
                 }  
-            }             
+            }  
         }
-
-
     }
 
     .transitioned{
@@ -533,8 +562,11 @@ header{
         @media screen and (max-width: 1200px) and (min-width: 801px) {
             left: 40px;
         }
-        @media screen and (max-width: 801px) and (min-width: 0px) {
+        @media screen and (max-width: 801px) and (min-width: 501px) {
             left: 20px;
+        }
+        @media screen and (max-width: 500px) and (min-width: 320px) {
+            left: 100px;
         }
     }
 
@@ -546,8 +578,11 @@ header{
         @media screen and (max-width: 1200px) and (min-width: 0px) {
             right: 40px;   
         }
-        @media screen and (max-width: 801px) and (min-width: 0px) {
+        @media screen and (max-width: 801px) and (min-width: 501px) {
             right: 20px;
+        }
+        @media screen and (max-width: 500px) and (min-width: 320px) {
+            right: 100px;
         }
     }
 }
@@ -570,6 +605,8 @@ main{
         align-items: center;
 
         position: relative;
+
+
 
         .title{
             
@@ -598,19 +635,41 @@ main{
             
             #scissors{
                 @extend %cards;
-                @media screen and (max-width: 1450px) and (min-width: 0px){
+                @media screen and (max-width: 480px) and (min-width: 391px){
+                    min-width: 350px;
+                }   
+                @media screen and (max-width: 390px) and (min-width: 371px){
+                    min-width: 310px;
+                }
+                @media screen and (max-width: 370px) and (min-width: 320px){
+                    min-width: 270px;
                 }
             }
 
             #maskGel{
                 @extend %cards;
-                @media screen and (max-width: 1450px) and (min-width: 0px){
+                @media screen and (max-width: 480px) and (min-width: 391px){
+                    min-width: 350px;
                 }
+                @media screen and (max-width: 390px) and (min-width: 371px){
+                    min-width: 310px;
+                }
+                @media screen and (max-width: 370px) and (min-width: 320px){
+                    min-width: 270px;
+                }
+
             }
 
             #nails{
                 @extend %cards;
-                @media screen and (max-width: 1450px) and (min-width: 0px){
+                @media screen and (max-width: 480px) and (min-width: 391px){
+                    min-width: 350px;
+                }
+                @media screen and (max-width: 390px) and (min-width: 371px){
+                    min-width: 310px;
+                }
+                @media screen and (max-width: 370px) and (min-width: 320px){
+                    min-width: 270px;
                 }
             }
 
@@ -635,9 +694,35 @@ main{
            }
         }
     }
-    @media screen and (max-width: 800px) and (min-width: 0px) {       
+    @media screen and (max-width: 800px) and (min-width: 481px) {       
         article:first-child{
            height: 2500px;
+           
+           #cardContainer{
+                justify-content: space-evenly;
+                flex-direction: column; 
+                position: relative;
+           }
+        }
+        
+    }
+
+    @media screen and (max-width: 480px) and (min-width: 371px) {       
+        article:first-child{
+           height: 2250px;
+           
+           #cardContainer{
+                justify-content: space-evenly;
+                flex-direction: column; 
+                position: relative;
+           }
+        }
+        
+    }
+
+    @media screen and (max-width: 371px) and (min-width: 0px) {       
+        article:first-child{
+           height: 1800px;
            
            #cardContainer{
                 justify-content: space-evenly;
@@ -1256,6 +1341,13 @@ footer{
     font-size: 1.2rem;
     color: whitesmoke;
 
+    overflow: hidden;
+
+    @media screen and (max-width: 1450px) and (min-width: 0px) {
+        height: 700px;
+        
+    }
+
     #footerContainer{
        height: 100%;
        display: grid;
@@ -1383,25 +1475,5 @@ footer{
     }
 }
 
-//footer
-#creator{
-    width: 100%;
-    height: 40px;
-    background-color: $ligher_black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #6D6D6D;
-    #icons{
-        margin-left: 50px;
-    }
-    a{
-        text-decoration: none;
-        color: #6D6D6D;
-    }
-    p{
-        margin-right: 50px;
-    }
-    font-size: 1rem;
-}
+
 
