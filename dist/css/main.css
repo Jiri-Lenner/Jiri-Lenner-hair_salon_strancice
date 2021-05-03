@@ -2222,14 +2222,112 @@ main article:nth-child(2) section:last-child #map #rightBot {
 
 main article:nth-child(2) section:last-child #map:hover #leftTop {
   opacity: 1;
-  left: 130px;
-  top: 130px;
+  left: 110px;
+  top: 140px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+  main article:nth-child(2) section:last-child #map:hover #leftTop {
+    left: 190px;
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 861px) {
+  main article:nth-child(2) section:last-child #map:hover #leftTop {
+    top: 120px;
+    left: 170px;
+  }
+}
+
+@media screen and (max-width: 860px) and (min-width: 651px) {
+  main article:nth-child(2) section:last-child #map:hover #leftTop {
+    left: 120px;
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 650px) and (min-width: 551px) {
+  main article:nth-child(2) section:last-child #map:hover #leftTop {
+    left: 100px;
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 481px) {
+  main article:nth-child(2) section:last-child #map:hover #leftTop {
+    left: 80px;
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 381px) {
+  main article:nth-child(2) section:last-child #map:hover #leftTop {
+    left: 60px;
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: 380px) and (min-width: 320px) {
+  main article:nth-child(2) section:last-child #map:hover #leftTop {
+    left: 40px;
+    top: 40px;
+  }
 }
 
 main article:nth-child(2) section:last-child #map:hover #rightBot {
   opacity: 1;
-  bottom: 130px;
-  right: 130px;
+  bottom: 140px;
+  right: 110px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+  main article:nth-child(2) section:last-child #map:hover #rightBot {
+    bottom: 120px;
+    right: 190px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 861px) {
+  main article:nth-child(2) section:last-child #map:hover #rightBot {
+    bottom: 120px;
+    right: 170px;
+  }
+}
+
+@media screen and (max-width: 860px) and (min-width: 651px) {
+  main article:nth-child(2) section:last-child #map:hover #rightBot {
+    bottom: 120px;
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 650px) and (min-width: 551px) {
+  main article:nth-child(2) section:last-child #map:hover #rightBot {
+    bottom: 100px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 481px) {
+  main article:nth-child(2) section:last-child #map:hover #rightBot {
+    bottom: 100px;
+    right: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 381px) {
+  main article:nth-child(2) section:last-child #map:hover #rightBot {
+    bottom: 60px;
+    right: 60px;
+  }
+}
+
+@media screen and (max-width: 380px) and (min-width: 320px) {
+  main article:nth-child(2) section:last-child #map:hover #rightBot {
+    bottom: 40px;
+    right: 40px;
+  }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1201px) {
