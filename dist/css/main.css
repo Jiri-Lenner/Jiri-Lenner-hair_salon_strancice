@@ -2356,7 +2356,7 @@ main article:nth-child(2) section:last-child #map:hover #rightBot {
 
 @media screen and (max-width: 450px) and (min-width: 361px) {
   main article:nth-child(2) {
-    height: 2060px;
+    height: 1700px;
   }
 }
 
