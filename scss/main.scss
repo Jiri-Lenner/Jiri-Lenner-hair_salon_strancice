@@ -1197,7 +1197,7 @@ main{
                                 }
 
                                 #daysOfWeek{
-                                    margin-top: -40px;
+                                    margin-top: -30px;
                                 }
 
                                 div{
@@ -1255,8 +1255,6 @@ main{
                                         font-size: 1rem;
                                         margin: 0px 10px;
                                     }
-
-
                                 }
                             }
                         }
@@ -1344,10 +1342,33 @@ main{
             display: flex;
             align-items: center;
 
-            @media screen and (max-width: 1200px) and (min-width: 0px) {
+            @media screen and (max-width: 1200px) and (min-width: 781px) {
                 height: 960px;
                 flex-direction: column;
             }
+
+            @media screen and (max-width: 780px) and (min-width: 481px) {
+                height: 800px;
+                flex-direction: column;
+            }
+
+            @media screen and (max-width: 480px) and (min-width: 361px) {
+                height: 600px;
+                flex-direction: column;
+            }
+
+            @media screen and (max-width: 360px) and (min-width: 320px) {
+                height: 600px;
+                flex-direction: column;
+            }
+
+
+
+
+
+
+
+
 
             #mapText{
                 width: 50%;
@@ -1368,6 +1389,68 @@ main{
 
                 color: whitesmoke;
                 line-height: 70px;
+
+                @media screen and (max-width: 1450px) and (min-width: 1271px) {
+                      h1{
+                          width: 60%;                          
+                      }
+                }
+                @media screen and (max-width: 1270px) and (min-width: 1201px) {
+                    h1{
+                        width: 70%;                          
+                    }
+                }
+                @media screen and (max-width: 1200px) and (min-width: 781px) {
+
+                    h1{
+                        width: 70%;                          
+                    }
+
+                    &{
+                        width: 70%;
+                    }
+                }
+
+                @media screen and (max-width: 780px) and (min-width: 481px) {
+
+                    h1{
+                        width: 100%;                          
+                    }
+
+                    &{
+                        width: 70%;
+                        font-size: 3.5rem;
+                        height: 400px;
+                    }
+                }
+                @media screen and (max-width: 480px) and (min-width: 361px) {
+
+                    h1{
+                        width: 100%;                          
+                    }
+
+                    &{
+                        width: 80%;
+                        font-size: 3rem;
+                        height: 300px;
+                    }
+                }
+
+                @media screen and (max-width: 360px) and (min-width: 320px) {
+
+                    h1{
+                        width: 100%;
+                        height: 100px; 
+                        line-height: 50px;                       
+                    }
+
+                    &{
+                        width: 80%;
+                        font-size: 2.5rem;
+                        height: 300px;
+                    }
+                }
+
             }
 
             #map{
@@ -1380,8 +1463,24 @@ main{
                 overflow: hidden;
                 text-decoration: none;
 
-                @media screen and (max-width: 1200px) and (min-width: 0px) {
+                @media screen and (max-width: 1200px) and (min-width: 781px) {
                     width: 100%;
+                }
+
+                @media screen and (max-width: 780px) and (min-width: 481px) {
+                    width: 100%;
+                    height: 400px;
+                    
+                }
+                @media screen and (max-width: 480px) and (min-width: 361px) {
+                    width: 100%;
+                    height: 300px;
+                    
+                }
+
+                @media screen and (max-width: 360px) and (min-width: 320px) {
+                    width: 100%;
+                    height: 300px;
                 }
 
                 #mapCover{
@@ -1472,15 +1571,36 @@ main{
             height: 1880px;
         }
     }
-    @media screen and (max-width: 1200px) and (min-width: 451px) {
+    @media screen and (max-width: 1200px) and (min-width: 781px) {
         article:nth-child(2){
             height: 2360px;
         }
     }
-    @media screen and (max-width: 450px) and (min-width: 0px) {
+
+    @media screen and (max-width: 780px) and (min-width: 481px) {
+        article:nth-child(2){
+            height: 2200px;
+        }
+    }
+
+    @media screen and (max-width: 480px) and (min-width: 451px) {
+        article:nth-child(2){
+            height: 2000px;
+        }
+    }
+
+    @media screen and (max-width: 450px) and (min-width: 361px) {
         &{
             article:nth-child(2){
                 height: 2060px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 360px) and (min-width: 320px) {
+        &{
+            article:nth-child(2){
+                height: 1700px;
             }
         }
     }
