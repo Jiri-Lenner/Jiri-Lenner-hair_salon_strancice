@@ -26,46 +26,45 @@ window.addEventListener("scroll", function () {
 //nav Slide in
 let hiddenNav = document.getElementById("hiddenNav");
 
-let animateHidden = function(){
+let animateHidden = function () {
     let animated = hiddenNav.animate([
         {
             left: "0%"
-        }, 
+        },
         {
-            
+
             left: "100%"
         }
-    ],{
+    ], {
         duration: 500,
         easing: "ease-in",
     });
     hiddenNav.style.left = "100%";
-} 
+}
 
-hiddenNav.querySelector("#navCross").addEventListener("click", ()=>{
+hiddenNav.querySelector("#navCross").addEventListener("click", () => {
     animateHidden();
 })
 
-document.getElementById("showNav").addEventListener("click", ()=>{
+document.getElementById("showNav").addEventListener("click", () => {
     let animated = hiddenNav.animate([
         {
             left: "100%"
-        }, 
+        },
         {
-            
+
             left: "0%"
         }
-    ],{
+    ], {
         duration: 500,
         easing: "ease-in",
-        
+
     });
     hiddenNav.style.left = "0%";
 })
 
-for (element of document.getElementsByClassName("hiddenButtons"))
-{
-    element.addEventListener("click", ()=>{
+for (element of document.getElementsByClassName("hiddenButtons")) {
+    element.addEventListener("click", () => {
         animateHidden();
     })
 }
@@ -147,38 +146,38 @@ imageButtonRight.addEventListener("click", () => {
 })
 
 //Services Buttons on lunch
-if(window.innerWidth <= 800){
+if (window.innerWidth <= 800) {
     for (let element of document.getElementsByClassName("expandable")) {
-        if ((window.innerWidth <= 480) && (window.innerWidth >= 391)){   
+        if ((window.innerWidth <= 480) && (window.innerWidth >= 391)) {
             element.style.height = "520px";
         }
-        else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)){
+        else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)) {
             element.style.height = "480px";
         }
-        else if((window.innerWidth <= 370) && (window.innerWidth >= 320)){
+        else if ((window.innerWidth <= 370) && (window.innerWidth >= 320)) {
             element.style.height = "440px";
-        }   
-        else{
+        }
+        else {
             element.style.height = "560px";
         }
         element.querySelector(".expTop").classList.add("expTopLight");
         element.querySelector(".expBot").classList.add("expBotLight");
     }
 }
-else{
+else {
     for (let element of document.getElementsByClassName("expandable")) {
         element.addEventListener("mouseenter", e => {
-            if(window.innerWidth > 800){
-                if ((window.innerWidth <= 480) && (window.innerWidth >= 391)){   
+            if (window.innerWidth > 800) {
+                if ((window.innerWidth <= 480) && (window.innerWidth >= 391)) {
                     e.target.style.height = "520px";
                 }
-                else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)){
+                else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)) {
                     e.target.style.height = "480px";
                 }
-                else if((window.innerWidth <= 370) && (window.innerWidth >= 320)){
+                else if ((window.innerWidth <= 370) && (window.innerWidth >= 320)) {
                     e.target.style.height = "440px";
-                }   
-                else{
+                }
+                else {
                     e.target.style.height = "560px";
                 }
                 e.target.querySelector(".expTop").classList.add("expTopLight");
@@ -186,17 +185,17 @@ else{
             }
         })
         element.addEventListener("mouseleave", e => {
-            if(window.innerWidth > 800){
-                if ((window.innerWidth <= 480) && (window.innerWidth >= 391)){   
+            if (window.innerWidth > 800) {
+                if ((window.innerWidth <= 480) && (window.innerWidth >= 391)) {
                     e.target.style.height = "260px";
                 }
-                else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)){
+                else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)) {
                     e.target.style.height = "240px";
                 }
-                else if((window.innerWidth <= 370) && (window.innerWidth >= 320)){
+                else if ((window.innerWidth <= 370) && (window.innerWidth >= 320)) {
                     e.target.style.height = "220px";
-                }   
-                else{
+                }
+                else {
                     e.target.style.height = "280px";
                 }
                 e.target.querySelector(".expTop").classList.remove("expTopLight");
@@ -206,21 +205,21 @@ else{
     }
 }
 
-window.addEventListener("resize", ()=>{
-    if(window.innerWidth > 800){
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 800) {
         //get it back to original shape
         for (let element of document.getElementsByClassName("expandable")) {
-            
-            if ((window.innerWidth <= 480) && (window.innerWidth >= 391)){   
+
+            if ((window.innerWidth <= 480) && (window.innerWidth >= 391)) {
                 element.style.height = "260px";
             }
-            else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)){
+            else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)) {
                 element.height = "240px";
             }
-            else if((window.innerWidth <= 370) && (window.innerWidth >= 320)){
+            else if ((window.innerWidth <= 370) && (window.innerWidth >= 320)) {
                 element.style.height = "220px";
-            }   
-            else{
+            }
+            else {
                 element.style.height = "280px";
             }
             element.querySelector(".expTop").classList.remove("expTopLight");
@@ -228,18 +227,18 @@ window.addEventListener("resize", ()=>{
 
             //add event listener
             element.addEventListener("mouseenter", e => {
-                if(window.innerWidth > 800){
-                    
-                    if ((window.innerWidth <= 480) && (window.innerWidth >= 391)){   
+                if (window.innerWidth > 800) {
+
+                    if ((window.innerWidth <= 480) && (window.innerWidth >= 391)) {
                         e.target.style.height = "520px";
                     }
-                    else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)){
+                    else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)) {
                         e.target.style.height = "480px";
                     }
-                    else if((window.innerWidth <= 370) && (window.innerWidth >= 320)){
+                    else if ((window.innerWidth <= 370) && (window.innerWidth >= 320)) {
                         e.target.style.height = "440px";
-                    }   
-                    else{
+                    }
+                    else {
                         e.target.style.height = "560px";
                     }
 
@@ -247,26 +246,26 @@ window.addEventListener("resize", ()=>{
                     e.target.querySelector(".expBot").classList.add("expBotLight");
                 }
             })
-            element.addEventListener("mouseleave", e => { 
-                if(window.innerWidth > 800){
+            element.addEventListener("mouseleave", e => {
+                if (window.innerWidth > 800) {
                     e.target.style.height = "280px";
                     e.target.querySelector(".expTop").classList.remove("expTopLight");
                     e.target.querySelector(".expBot").classList.remove("expBotLight");
                 }
             })
         }
-    }else if(window.innerWidth <= 800){
+    } else if (window.innerWidth <= 800) {
         for (let element of document.getElementsByClassName("expandable")) {
-            if ((window.innerWidth <= 480) && (window.innerWidth >= 391)){   
+            if ((window.innerWidth <= 480) && (window.innerWidth >= 391)) {
                 element.style.height = "520px";
             }
-            else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)){
+            else if ((window.innerWidth <= 390) && (window.innerWidth >= 371)) {
                 element.style.height = "480px";
             }
-            else if((window.innerWidth <= 370) && (window.innerWidth >= 320)){
+            else if ((window.innerWidth <= 370) && (window.innerWidth >= 320)) {
                 element.style.height = "440px";
-            }   
-            else{
+            }
+            else {
                 element.style.height = "560px";
             }
             element.querySelector(".expTop").classList.add("expTopLight");
