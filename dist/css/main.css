@@ -1043,7 +1043,7 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .mov
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("./dist/img/salon.jpeg");
+  background-image: url("/dist/img/salon.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1264,7 +1264,7 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .mov
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("./dist/img/salon.jpeg");
+  background-image: url("/dist/img/salon.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
