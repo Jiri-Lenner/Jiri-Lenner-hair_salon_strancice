@@ -1,295 +1,342 @@
 <!DOCTYPE html>
 <html lang="cs">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://api.cajthaml.eu/upload/reset_595b8cd7ad.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="./dist/icons/font/flaticon.css">
-    <link rel="stylesheet" href="./dist/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.cajthaml.eu/upload/reset_595b8cd7ad.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./dist/icons/font/flaticon.css"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
     <title>Centrum Krásy Strančice</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="frontPage">
-        <!--Nav => absolutly positioned-->
-        <nav id="navbar">
-            <a href="#frontPage" id="nav_logo">
-                <img src="./dist/img/nav_logo.png" alt="Logo">
-            </a>
+      <!--Nav => absolutly positioned-->
+      <nav id="navbar">
+        <a href="#frontPage" id="nav_logo">
+          <img src="./dist/img/nav_logo.png" alt="Logo" />
+        </a>
 
-            <div id="nav_buttons_container">
-                <a class="linkButton" href="#anchorPointTop">Služby</a>
-                <a class="linkButton" href="">Náš Team</a>
-                <a class="linkButton" href="">Galerie</a>
-                <a class="linkButton" href="#anchorPointBottom">Kontakty</a>
-                <div href="" id="showNav"><i class="fas fa-bars"></i></div>
-            </div>
-        </nav>
-
-        <!--Hidden NAV-->
-        <div id="hiddenNav">
-            <div id="hidden_nav_buttons">
-                <a class="hiddenButtons" href="#anchorPointTop">Služby</a>
-                <a class="hiddenButtons" href="">Náš Team</a>
-                <a class="hiddenButtons" href="">Galerie</a>
-                <a class="hiddenButtons" href="#anchorPointBottom">Kontakty</a>
-
-            </div>
-            <div href="" id="navCross"><i class="fas fa-times"></i></div>
+        <div id="nav_buttons_container">
+          <a class="linkButton" href="#anchorPointTop">Služby</a>
+          <a class="linkButton" href="">Náš Team</a>
+          <a class="linkButton" href="">Galerie</a>
+          <a class="linkButton" href="#anchorPointBottom">Kontakty</a>
+          <div href="" id="showNav"><i class="fas fa-bars"></i></div>
         </div>
+      </nav>
 
-        <!--anchor point for header-->
-        <div id="anchorPointTop">
+      <!--Hidden NAV-->
+      <div id="hiddenNav">
+        <div id="hidden_nav_buttons">
+          <a class="hiddenButtons" href="#anchorPointTop">Služby</a>
+          <a class="hiddenButtons" href="">Náš Team</a>
+          <a class="hiddenButtons" href="">Galerie</a>
+          <a class="hiddenButtons" href="#anchorPointBottom">Kontakty</a>
+        </div>
+        <div href="" id="navCross"><i class="fas fa-times"></i></div>
+      </div>
 
+      <!--anchor point for header-->
+      <div id="anchorPointTop"></div>
+      <!--Slide containers with content-->
+      <div class="slide_container transitioned">
+        <img
+          id="img1"
+          src="./dist/img/Adobe_Stock_Standard_License_FHD/blond_woman.png"
+          alt="Adobe stock standard licence"
+        />
+        <div class="slide_text">
+          <h2 class="frontInnerElement">Vítejte</h2>
+          <h1 class="frontInnerElement">V Centru Krásy<br />Strančice</h1>
+          <p class="frontInnerElement">
+            Objevte svůj styl a užijte si professionální péči! V moderním a
+            příjemném prostředí vám nabízíme vše pro vaši krásu. pedikúru,
+            kadeřnické a kosmetické služby.
+          </p>
+          <a class="frontInnerElement" id="welcome" href="#">ZJISTĚTE VÍCE</a>
         </div>
-        <!--Slide containers with content-->
-        <div class="slide_container transitioned">
-            <img id="img1" src="./dist/img/Adobe_Stock_Standard_License_FHD/blond_woman.png"
-                alt="Adobe stock standard licence">
-            <div class="slide_text">
-                <h2 class="frontInnerElement">Vítejte</h2>
-                <h1 class="frontInnerElement">V Centru Krásy<br>Strančice</h1>
-                <p class="frontInnerElement">Objevte svůj styl a užijte si professionální péči!
-                    V moderním a příjemném prostředí vám nabízíme vše pro vaši krásu.
-                    pedikúru, kadeřnické a kosmetické služby.
-                </p>
-                <a class="frontInnerElement" id="welcome" href="#">ZJISTĚTE VÍCE</a>
-            </div>
-        </div>
+      </div>
 
-        <div class="slide_container transitioned">
-            <img id="img2" src="./dist/img/Adobe_Stock_Standard_License_FHD/dark_man.png"
-                alt="Adobe stock standard licence">
-            <div class="slide_text">
-                <h2 class="frontInnerElement">Kadeřnictví</h2>
-                <h1 class="frontInnerElement">Lorem ipsum dolor sit<br>Lorem ipsum dolor</h1>
-                <p class="frontInnerElement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-                    reiciendis ipsam sunt laborum,
-                    velit voluptatem,</p>
-                <a class="frontInnerElement" href="#">ZJISTĚTE VÍCE</a>
-            </div>
+      <div class="slide_container transitioned">
+        <img
+          id="img2"
+          src="./dist/img/Adobe_Stock_Standard_License_FHD/dark_man.png"
+          alt="Adobe stock standard licence"
+        />
+        <div class="slide_text">
+          <h2 class="frontInnerElement">Kadeřnictví</h2>
+          <h1 class="frontInnerElement">
+            Lorem ipsum dolor sit<br />Lorem ipsum dolor
+          </h1>
+          <p class="frontInnerElement">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            reiciendis ipsam sunt laborum, velit voluptatem,
+          </p>
+          <a class="frontInnerElement" href="#">ZJISTĚTE VÍCE</a>
         </div>
+      </div>
 
-        <div class="slide_container transitioned">
-            <img id="img3" src="./dist/img/Adobe_Stock_Standard_License_FHD/red_woman.png"
-                alt="Adobe stock standard licence">
-            <div class="slide_text">
-                <h2 class="frontInnerElement">Kosmetika</h2>
-                <h1 class="frontInnerElement">Lorem ipsum dolor sit<br>Lorem ipsum dolor</h1>
-                <p class="frontInnerElement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-                    reiciendis ipsam sunt laborum,
-                    velit voluptatem,</p>
-                <a class="frontInnerElement" href="#">ZJISTĚTE VÍCE</a>
-            </div>
+      <div class="slide_container transitioned">
+        <img
+          id="img3"
+          src="./dist/img/Adobe_Stock_Standard_License_FHD/red_woman.png"
+          alt="Adobe stock standard licence"
+        />
+        <div class="slide_text">
+          <h2 class="frontInnerElement">Kosmetika</h2>
+          <h1 class="frontInnerElement">
+            Lorem ipsum dolor sit<br />Lorem ipsum dolor
+          </h1>
+          <p class="frontInnerElement">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            reiciendis ipsam sunt laborum, velit voluptatem,
+          </p>
+          <a class="frontInnerElement" href="#">ZJISTĚTE VÍCE</a>
         </div>
-        //4
-        <div class="slide_container transitioned">
-            <img id="img4" src="./dist/img/Adobe_Stock_Standard_License_FHD/blond_man.png"
-                alt="Adobe stock standard licence">
-            <div class="slide_text">
-                <h2 class="frontInnerElement">Pedikúra</h2>
-                <h1 class="frontInnerElement">Lorem ipsum dolor sit<br>Lorem ipsum dolor</h1>
-                <p class="frontInnerElement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-                    reiciendis ipsam sunt laborum,
-                    velit voluptatem,</p>
-                <a class="frontInnerElement" href="#">ZJISTĚTE VÍCE</a>
-            </div>
+      </div>
+      //4
+      <div class="slide_container transitioned">
+        <img
+          id="img4"
+          src="./dist/img/Adobe_Stock_Standard_License_FHD/blond_man.png"
+          alt="Adobe stock standard licence"
+        />
+        <div class="slide_text">
+          <h2 class="frontInnerElement">Pedikúra</h2>
+          <h1 class="frontInnerElement">
+            Lorem ipsum dolor sit<br />Lorem ipsum dolor
+          </h1>
+          <p class="frontInnerElement">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            reiciendis ipsam sunt laborum, velit voluptatem,
+          </p>
+          <a class="frontInnerElement" href="#">ZJISTĚTE VÍCE</a>
         </div>
+      </div>
 
-        <!--Arrows-->
-        <!--left-->
-        <div class="arrow" id="arrow_left">
-            <i class="fas fa-long-arrow-alt-left"></i>
-        </div>
+      <!--Arrows-->
+      <!--left-->
+      <div class="arrow" id="arrow_left">
+        <i class="fas fa-long-arrow-alt-left"></i>
+      </div>
 
-        <!--right-->
-        <div class="arrow" id="arrow_right">
-            <i class="fas fa-long-arrow-alt-right"></i>
-        </div>
+      <!--right-->
+      <div class="arrow" id="arrow_right">
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </div>
     </header>
 
     <main>
-        <article id="services">
+      <article id="services">
+        <h1 class="title">Služby</h1>
 
-            <h1 class="title">
-                Služby
-            </h1>
-
-            <!--Služby-->
-            <div id="cardContainer">
-
-                <div class="expandable" id="scissors">
-                    <div class="expTop ">
-                        <i class="flaticon-scissors"></i>
-                        <h1>Stříhání</h1>
-                    </div>
-                    <div class="expBot">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit dolorum praesentium
-                            illum, at
-                        </p>
-                        <a href="#">VÍCE INFORMACÍ</a>
-                    </div>
-                </div>
-                <div class="expandable " id="maskGel">
-                    <div class="expTop ">
-                        <i class="flaticon-cream"></i>
-                        <h1>Kosmetika</h1>
-                    </div>
-                    <div class="expBot">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit dolorum praesentium
-                            illum, at
-                        </p>
-                        <a href="#">VÍCE INFORMACÍ</a>
-                    </div>
-                </div>
-                <div class="expandable" id="nails">
-                    <div class="expTop ">
-                        <i class="flaticon-pedicure"></i>
-                        <h1>Pedikúra</h1>
-                    </div>
-                    <div class="expBot">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit dolorum praesentium
-                            illum, at
-                        </p>
-                        <a href="#">VÍCE INFORMACÍ</a>
-                    </div>
-                </div>
+        <!--Služby-->
+        <div id="cardContainer">
+          <div class="expandable" id="scissors">
+            <div class="expTop">
+              <i class="flaticon-scissors"></i>
+              <h1>Stříhání</h1>
             </div>
-        </article>
-        <article>
-            <section>
-                <div id="left_aboutUs">
-                    <div id="innerContainer">
-                        <div id="outerContainer"></div>
-                        <div class="movedContainer" id="openContainer">
-                            <div id="border">
-                                <div class="styleLine leftLine"></div>
-                                <div class="styleLine rightLine"></div>
-                                <div class="styleLine topLine"></div>
-                                <div class="styleLine botLine"></div>
-                            </div>
-                            <div id="content">
-                                <div id="timeTop">
-                                    <i class="flaticon-salon"></i>
-                                    <h1>Otevírací Hodiny</h1>
-                                </div>
-                                <div id="time">
-                                    <div>
-                                        <p>
-                                            od 9
-                                        </p>
-                                        <i class="fas fa-arrow-right"></i>
-                                        <p>
-                                            do 18
-                                        </p>
-                                    </div>
-                                    <p id="daysOfWeek">
-                                        Pondělí - Pátek
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="right_aboutUs">
-                    <h1>O Našem Salónu</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius amet totam neque similique
-                        tempore accusantium veritatis maiores cumque iure perspiciatis consequatur, culpa vero molestiae
-                        dignissimos sit reiciendis, doloremque nam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusantium error nobis nihil, rem
-                        quo iste quam iure tempora quod, ullam laborum illum dolorem dolor cumque, quasi quidem soluta
-                        beatae!</p>
-                </div>
-            </section>
-            <section>
-                <div id="mapText">
-                    <h1>Kde <br> <span>nás najdete ?</span></h1>
-                </div>
-                <a href="https://www.google.com/maps/place/Centrum+kr%C3%A1sy+Stran%C4%8Dice/@49.9484142,14.6763914,17z/data=!3m1!4b1!4m5!3m4!1s0x470b88f8b3042d75:0xcb52e2b3badaa517!8m2!3d49.9484108!4d14.6785801"
-                    id="map">
-                    <div id="mapCover">
-                        <div>
-                            <h1>Umístění</h1>
-                            <p>Náměstí Emila Kolbena 460, 251 63 Strančice</p>
-                            <i class="flaticon-maps-and-flags"></i>
-                        </div>
-                    </div>
-                    <div id="leftTop"></div>
-                    <div id="rightBot"></div>
-                </a>
-            </section>
-        </article>
-        <div id="anchorPointBottom">
-
+            <div class="expBot">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                impedit dolorum praesentium illum, at
+              </p>
+              <a href="#">VÍCE INFORMACÍ</a>
+            </div>
+          </div>
+          <div class="expandable" id="maskGel">
+            <div class="expTop">
+              <i class="flaticon-cream"></i>
+              <h1>Kosmetika</h1>
+            </div>
+            <div class="expBot">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                impedit dolorum praesentium illum, at
+              </p>
+              <a href="#">VÍCE INFORMACÍ</a>
+            </div>
+          </div>
+          <div class="expandable" id="nails">
+            <div class="expTop">
+              <i class="flaticon-pedicure"></i>
+              <h1>Pedikúra</h1>
+            </div>
+            <div class="expBot">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                impedit dolorum praesentium illum, at
+              </p>
+              <a href="#">VÍCE INFORMACÍ</a>
+            </div>
+          </div>
         </div>
+      </article>
+      <article>
+        <section>
+          <div id="left_aboutUs">
+            <div id="innerContainer">
+              <div id="outerContainer"></div>
+              <div class="movedContainer" id="openContainer">
+                <div id="border">
+                  <div class="styleLine leftLine"></div>
+                  <div class="styleLine rightLine"></div>
+                  <div class="styleLine topLine"></div>
+                  <div class="styleLine botLine"></div>
+                </div>
+                <div id="content">
+                  <div id="timeTop">
+                    <i class="flaticon-salon"></i>
+                    <h1>Otevírací Hodiny</h1>
+                  </div>
+                  <div id="time">
+                    <div>
+                      <p>od 9</p>
+                      <i class="fas fa-arrow-right"></i>
+                      <p>do 18</p>
+                    </div>
+                    <p id="daysOfWeek">Pondělí - Pátek</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="right_aboutUs">
+            <h1>O Našem Salónu</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              eius amet totam neque similique tempore accusantium veritatis
+              maiores cumque iure perspiciatis consequatur, culpa vero molestiae
+              dignissimos sit reiciendis, doloremque nam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              accusantium error nobis nihil, rem quo iste quam iure tempora
+              quod, ullam laborum illum dolorem dolor cumque, quasi quidem
+              soluta beatae!
+            </p>
+          </div>
+        </section>
+        <section>
+          <div id="mapText">
+            <h1>
+              Kde <br />
+              <span>nás najdete ?</span>
+            </h1>
+          </div>
+          <a
+            href="https://www.google.com/maps/place/Centrum+kr%C3%A1sy+Stran%C4%8Dice/@49.9484142,14.6763914,17z/data=!3m1!4b1!4m5!3m4!1s0x470b88f8b3042d75:0xcb52e2b3badaa517!8m2!3d49.9484108!4d14.6785801"
+            id="map"
+          >
+            <div id="mapCover">
+              <div>
+                <h1>Umístění</h1>
+                <p>Náměstí Emila Kolbena 460, 251 63 Strančice</p>
+                <i class="flaticon-maps-and-flags"></i>
+              </div>
+            </div>
+            <div id="leftTop"></div>
+            <div id="rightBot"></div>
+          </a>
+        </section>
+      </article>
+      <div id="anchorPointBottom"></div>
     </main>
     <footer>
-        <div id="footerContainer">
-            <ul id="footerText">
-                <!--List 1-->
-                <li>
-                    <img src="./dist/img/nav_logo.png" alt="Logo">
-                </li>
-                <li id="links">
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
-                    <a
-                        href="https://www.google.com/maps/place/Centrum+kr%C3%A1sy+Stran%C4%8Dice/@49.9484142,14.6763914,17z/data=!3m1!4b1!4m5!3m4!1s0x470b88f8b3042d75:0xcb52e2b3badaa517!8m2!3d49.9484108!4d14.6785801"><i
-                            class="fas fa-map-marker-alt"></i></a>
-                    <a href="tel:x-x-x"><i class="fas fa-phone-alt"></i></a>
-                </li>
-            </ul>
-            <!--List 2-->
-            <ul id="contactText">
-                <li>
-                    <p>Kontakty</p>
-                    <div class="contact">
-                        <i class="far fa-paper-plane"></i>
-                        <p class="head"><a href="mailto: ">centrumKrasyStrancice@gmail.cz</a></p>
-                    </div>
-                    <div class="contact">
-                        <i class="fas fa-phone-alt"></i>
-                        <p class="head"><a href="tel:x-x-x">666-666-666</a></p>
-                    </div>
-                </li>
-            </ul>
-            <ul id="products">
-                <!--List 3-->
-                <div id="upperImages">
-                    <a href="https://www.belter.cz" class="imgSize"><img src="./dist/img/belter.png" alt=""></a>
-                    <a href="http://www.dusy.cz/product/meliry/" class="imgSize"><img src="./dist/img/dusy.png"
-                            alt=""></a>
-                    <a href="https://www.goldwell.com/cs-cz/home/" class="imgSize"><img src="./dist/img/goldwell.png"
-                            alt=""></a>
-                </div>
-                <div id="lowerImages">
-                    <a href="https://www.loreal.com/cs-cz/czech-republic/" class="imgSize"><img
-                            src="./dist/img/loreal.png" alt=""></a>
-                    <a href="https://www.matrix.com" class="imgSize"><img src="./dist/img/matrix.png" alt=""></a>
-                </div>
-            </ul>
-        </div>
+      <div id="footerContainer">
+        <ul id="footerText">
+          <!--List 1-->
+          <li>
+            <img src="./dist/img/nav_logo.png" alt="Logo" />
+          </li>
+          <li id="links">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a
+              href="https://www.google.com/maps/place/Centrum+kr%C3%A1sy+Stran%C4%8Dice/@49.9484142,14.6763914,17z/data=!3m1!4b1!4m5!3m4!1s0x470b88f8b3042d75:0xcb52e2b3badaa517!8m2!3d49.9484108!4d14.6785801"
+              ><i class="fas fa-map-marker-alt"></i
+            ></a>
+            <a href="tel:x-x-x"><i class="fas fa-phone-alt"></i></a>
+          </li>
+        </ul>
+        <!--List 2-->
+        <ul id="contactText">
+          <li>
+            <p>Kontakty</p>
+            <div class="contact">
+              <i class="far fa-paper-plane"></i>
+              <p class="head">
+                <a href="mailto: ">centrumKrasyStrancice@gmail.cz</a>
+              </p>
+            </div>
+            <div class="contact">
+              <i class="fas fa-phone-alt"></i>
+              <p class="head"><a href="tel:x-x-x">666-666-666</a></p>
+            </div>
+          </li>
+        </ul>
+        <ul id="products">
+          <!--List 3-->
+          <div id="upperImages">
+            <a href="https://www.belter.cz" class="imgSize"
+              ><img src="./dist/img/belter.png" alt=""
+            /></a>
+            <a href="http://www.dusy.cz/product/meliry/" class="imgSize"
+              ><img src="./dist/img/dusy.png" alt=""
+            /></a>
+            <a href="https://www.goldwell.com/cs-cz/home/" class="imgSize"
+              ><img src="./dist/img/goldwell.png" alt=""
+            /></a>
+          </div>
+          <div id="lowerImages">
+            <a
+              href="https://www.loreal.com/cs-cz/czech-republic/"
+              class="imgSize"
+              ><img src="./dist/img/loreal.png" alt=""
+            /></a>
+            <a href="https://www.matrix.com" class="imgSize"
+              ><img src="./dist/img/matrix.png" alt=""
+            /></a>
+          </div>
+        </ul>
+      </div>
     </footer>
-    <script src="./dist/js/main.js">
-    </script>
+    <script src="./dist/js/main.js"></script>
     <div id="creator">
-        <div id="icons">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <p>© 2021 Assets made by Václav Mareš</p>
-        <p>© 2021 Made by Jiří Lenner Junior</p>
+      <div id="icons">
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <p>© 2021 Assets made by Václav Mareš</p>
+      <p>© 2021 Made by Jiří Lenner Junior</p>
     </div>
-</body>
-
+  </body>
 </html>
