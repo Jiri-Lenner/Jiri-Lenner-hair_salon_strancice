@@ -340,6 +340,10 @@ header{
                 margin-left: -250px;
             }
 
+            #welcome{
+                display: none;
+            }
+
             h2{
                 font-family: 'Parisienne', cursive;
                 font-size: 3.5em;
@@ -356,6 +360,7 @@ header{
                 color: white;
                 transform: translateX(-520px);
                 visibility:hidden;
+                line-height: 50px;
                 opacity: 0;
                 transition: 1000ms transform ease-in,1500ms visibility 700ms ease-in, 1500ms opacity 700ms;
             }
